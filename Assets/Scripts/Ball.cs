@@ -31,7 +31,7 @@ public class Ball : MonoBehaviour
         rd = GetComponent<MeshRenderer>();
     }
 
-    public void SetColor(BallColor color)
+    public void SetColorAndPoint(BallColor color)
     {
         switch (color)
         {
@@ -57,7 +57,7 @@ public class Ball : MonoBehaviour
                 break;
             case BallColor.Blue:
                 point = 5;
-                rd.material.color = new Color32(255,98,193,255);
+                rd.material.color = Color.blue;
                 break;
             case BallColor.Pink:
                 point = 6;
