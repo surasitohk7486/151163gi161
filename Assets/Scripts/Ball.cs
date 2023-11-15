@@ -18,7 +18,7 @@ public class Ball : MonoBehaviour
 {
     [SerializeField]
     private int point;
-    public int Point { get { return point} }
+    public int Point { get { return point; } }
 
     [SerializeField]
     private BallColor color;
