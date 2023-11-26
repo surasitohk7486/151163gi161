@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
     private void RotateBall()
     {
         xInput = Input.GetAxis("Horizontal");
-        cueBall.transform.Rotate(new Vector3(0f,xInput/20f,0f));
+        cueBall.transform.Rotate(new Vector3(0f,xInput/5f,0f));
     }
 
     private void ShootBall()
@@ -94,4 +94,5 @@ public class GameManager : MonoBehaviour
 
         ballLine.SetActive(true);
      }
+
 }
